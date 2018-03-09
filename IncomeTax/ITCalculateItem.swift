@@ -33,10 +33,28 @@ class ITCalculateItem : UIView {
         
     }
     
+    func set_text1(_ text : String) {
+        self.rate_label.text = text
+    }
+    
+    func set_text2(_ text : String , _ text1 : String) {
+        self.rate_label.text = text
+        self.amount_label.text = text1
+    }
+    
     func set_rate(_ rate : Float , _ total_income : Float) {
         self.rate_label.text = String.init(format: "%.1f%", rate)
         self.amount_label.text = String.init(format: "%.1f", ITCalulateModel.rate_calulate(rate, total_income))
         
+    }
+    
+    func autolayout_text1() {
+        self.rate_label.snp.makeConstraints { (maker) in
+            maker.left.equalTo(self.snp.left)
+            maker.right.equalTo(self.snp.right)
+            maker.width.lessThanOrEqualTo(self.snp.width)
+            maker.height.equalTo(self.snp.height)
+        }
     }
     
     func autolayout_func() {

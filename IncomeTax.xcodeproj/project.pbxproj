@@ -19,6 +19,7 @@
 		34D69326204D2100003C70A3 /* IncomeTaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69325204D2100003C70A3 /* IncomeTaxVC.swift */; };
 		34D69328204D22B0003C70A3 /* IncomeTaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69327204D22B0003C70A3 /* IncomeTaxView.swift */; };
 		34D6932A204D284F003C70A3 /* IncomeTaxCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */; };
+		34EB56812052A4470054A7DE /* ITCalculateExcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB56802052A4470054A7DE /* ITCalculateExcel.swift */; };
 		A0DF1BF0E80CFD9BFE1E3CB6 /* Pods_IncomeTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DEFD4415EE66CF2C7897A6 /* Pods_IncomeTax.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		34D69325204D2100003C70A3 /* IncomeTaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxVC.swift; sourceTree = "<group>"; };
 		34D69327204D22B0003C70A3 /* IncomeTaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxView.swift; sourceTree = "<group>"; };
 		34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculateView.swift; sourceTree = "<group>"; };
+		34EB56802052A4470054A7DE /* ITCalculateExcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCalculateExcel.swift; sourceTree = "<group>"; };
 		AB18BA96FF519A88752A4D5F /* Pods-IncomeTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax.release.xcconfig"; sourceTree = "<group>"; };
 		CAA1F2FC78E25CDE6DB91C70 /* Pods-IncomeTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax.debug.xcconfig"; sourceTree = "<group>"; };
 		E7DEFD4415EE66CF2C7897A6 /* Pods_IncomeTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				34D692F9204D20EC003C70A3 /* ViewController.swift */,
 				34D69325204D2100003C70A3 /* IncomeTaxVC.swift */,
 				34D69327204D22B0003C70A3 /* IncomeTaxView.swift */,
+				34EB56802052A4470054A7DE /* ITCalculateExcel.swift */,
 				34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */,
 				341B7C522052364300E2551B /* ITCalculateItem.swift */,
 				341B7C5420523D2F00E2551B /* ITCalulateModel.swift */,
@@ -374,6 +377,7 @@
 				341B7C532052364300E2551B /* ITCalculateItem.swift in Sources */,
 				34D69328204D22B0003C70A3 /* IncomeTaxView.swift in Sources */,
 				341B7C5520523D2F00E2551B /* ITCalulateModel.swift in Sources */,
+				34EB56812052A4470054A7DE /* ITCalculateExcel.swift in Sources */,
 				34D69326204D2100003C70A3 /* IncomeTaxVC.swift in Sources */,
 				34D692F8204D20EC003C70A3 /* AppDelegate.swift in Sources */,
 			);

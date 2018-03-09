@@ -34,6 +34,7 @@ class IncomeTaxView: UIView {
         self.autolayout_func()
     }
     
+   
     
     func autolayout_func() {
         self.gross_salary_label.snp.makeConstraints { (maker) in

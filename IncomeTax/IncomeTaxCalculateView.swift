@@ -27,15 +27,22 @@ class IncomeTaxCalculateView: UIView {
         self.addSubview(self.title)
         
 //        let item = ITCalculateItem.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 100))
-        personal_item.set_rate(6, 10000)
+        
         self.addSubview(personal_item)
         personal_item.autolayout_func()
         
-        company_item.set_rate(6, 10000)
+        
         self.addSubview(company_item)
         company_item.autolayout_func()
         
     }
+    
+    func setcontent(_ title : String , _ person_rate : Float , _ company_rate : Float , _ total_income : Float) {
+        self.title.text = title
+        personal_item.set_rate(person_rate, total_income)
+        company_item.set_rate(company_rate, total_income)
+    }
+    
     
     func autolayout_func() {
         self.title.snp.makeConstraints { (maker) in
