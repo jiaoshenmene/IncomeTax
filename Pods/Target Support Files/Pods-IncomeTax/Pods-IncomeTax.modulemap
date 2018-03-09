@@ -1,0 +1,6 @@
+framework module Pods_IncomeTax {
+  umbrella header "Pods-IncomeTax-umbrella.h"
+
+  export *
+  module * { export * }
+}

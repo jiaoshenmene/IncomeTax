@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341B7C532052364300E2551B /* ITCalculateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B7C522052364300E2551B /* ITCalculateItem.swift */; };
+		341B7C5520523D2F00E2551B /* ITCalulateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B7C5420523D2F00E2551B /* ITCalulateModel.swift */; };
 		34D692F8204D20EC003C70A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D692F7204D20EC003C70A3 /* AppDelegate.swift */; };
 		34D692FA204D20EC003C70A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D692F9204D20EC003C70A3 /* ViewController.swift */; };
 		34D692FD204D20EC003C70A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D692FB204D20EC003C70A3 /* Main.storyboard */; };
@@ -14,6 +16,10 @@
 		34D69302204D20EC003C70A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D69300204D20EC003C70A3 /* LaunchScreen.storyboard */; };
 		34D6930D204D20EC003C70A3 /* IncomeTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6930C204D20EC003C70A3 /* IncomeTaxTests.swift */; };
 		34D69318204D20EC003C70A3 /* IncomeTaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69317204D20EC003C70A3 /* IncomeTaxUITests.swift */; };
+		34D69326204D2100003C70A3 /* IncomeTaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69325204D2100003C70A3 /* IncomeTaxVC.swift */; };
+		34D69328204D22B0003C70A3 /* IncomeTaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69327204D22B0003C70A3 /* IncomeTaxView.swift */; };
+		34D6932A204D284F003C70A3 /* IncomeTaxCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */; };
+		A0DF1BF0E80CFD9BFE1E3CB6 /* Pods_IncomeTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DEFD4415EE66CF2C7897A6 /* Pods_IncomeTax.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341B7C522052364300E2551B /* ITCalculateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCalculateItem.swift; sourceTree = "<group>"; };
+		341B7C5420523D2F00E2551B /* ITCalulateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCalulateModel.swift; sourceTree = "<group>"; };
 		34D692F4204D20EC003C70A3 /* IncomeTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncomeTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D692F7204D20EC003C70A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34D692F9204D20EC003C70A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		34D69313204D20EC003C70A3 /* IncomeTaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncomeTaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D69317204D20EC003C70A3 /* IncomeTaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxUITests.swift; sourceTree = "<group>"; };
 		34D69319204D20EC003C70A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D69325204D2100003C70A3 /* IncomeTaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxVC.swift; sourceTree = "<group>"; };
+		34D69327204D22B0003C70A3 /* IncomeTaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxView.swift; sourceTree = "<group>"; };
+		34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculateView.swift; sourceTree = "<group>"; };
+		AB18BA96FF519A88752A4D5F /* Pods-IncomeTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax.release.xcconfig"; sourceTree = "<group>"; };
+		CAA1F2FC78E25CDE6DB91C70 /* Pods-IncomeTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax.debug.xcconfig"; sourceTree = "<group>"; };
+		E7DEFD4415EE66CF2C7897A6 /* Pods_IncomeTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DF1BF0E80CFD9BFE1E3CB6 /* Pods_IncomeTax.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				34D6930B204D20EC003C70A3 /* IncomeTaxTests */,
 				34D69316204D20EC003C70A3 /* IncomeTaxUITests */,
 				34D692F5204D20EC003C70A3 /* Products */,
+				B28446C0C81168938362FFDD /* Pods */,
+				D839F7801DDD78D0A65A8839 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,11 @@
 			children = (
 				34D692F7204D20EC003C70A3 /* AppDelegate.swift */,
 				34D692F9204D20EC003C70A3 /* ViewController.swift */,
+				34D69325204D2100003C70A3 /* IncomeTaxVC.swift */,
+				34D69327204D22B0003C70A3 /* IncomeTaxView.swift */,
+				34D69329204D284F003C70A3 /* IncomeTaxCalculateView.swift */,
+				341B7C522052364300E2551B /* ITCalculateItem.swift */,
+				341B7C5420523D2F00E2551B /* ITCalulateModel.swift */,
 				34D692FB204D20EC003C70A3 /* Main.storyboard */,
 				34D692FE204D20EC003C70A3 /* Assets.xcassets */,
 				34D69300204D20EC003C70A3 /* LaunchScreen.storyboard */,
@@ -125,6 +147,23 @@
 			path = IncomeTaxUITests;
 			sourceTree = "<group>";
 		};
+		B28446C0C81168938362FFDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAA1F2FC78E25CDE6DB91C70 /* Pods-IncomeTax.debug.xcconfig */,
+				AB18BA96FF519A88752A4D5F /* Pods-IncomeTax.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D839F7801DDD78D0A65A8839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7DEFD4415EE66CF2C7897A6 /* Pods_IncomeTax.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D6931C204D20EC003C70A3 /* Build configuration list for PBXNativeTarget "IncomeTax" */;
 			buildPhases = (
+				4F12FEEE4758BB68875350AC /* [CP] Check Pods Manifest.lock */,
 				34D692F0204D20EC003C70A3 /* Sources */,
 				34D692F1204D20EC003C70A3 /* Frameworks */,
 				34D692F2204D20EC003C70A3 /* Resources */,
+				4B81F4DBE70AF1A79A7609A6 /* [CP] Embed Pods Frameworks */,
+				CB7A4607F52CFDFA2CF0A701 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +296,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B81F4DBE70AF1A79A7609A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYAsyncLayer/YYAsyncLayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYAsyncLayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F12FEEE4758BB68875350AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IncomeTax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7A4607F52CFDFA2CF0A701 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IncomeTax/Pods-IncomeTax-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34D692F0204D20EC003C70A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D6932A204D284F003C70A3 /* IncomeTaxCalculateView.swift in Sources */,
 				34D692FA204D20EC003C70A3 /* ViewController.swift in Sources */,
+				341B7C532052364300E2551B /* ITCalculateItem.swift in Sources */,
+				34D69328204D22B0003C70A3 /* IncomeTaxView.swift in Sources */,
+				341B7C5520523D2F00E2551B /* ITCalulateModel.swift in Sources */,
+				34D69326204D2100003C70A3 /* IncomeTaxVC.swift in Sources */,
 				34D692F8204D20EC003C70A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +539,7 @@
 		};
 		34D6931D204D20EC003C70A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA1F2FC78E25CDE6DB91C70 /* Pods-IncomeTax.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +555,7 @@
 		};
 		34D6931E204D20EC003C70A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB18BA96FF519A88752A4D5F /* Pods-IncomeTax.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
