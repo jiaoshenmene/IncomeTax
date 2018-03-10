@@ -21,12 +21,18 @@ class ITCalculateItem : UIView {
         super.init(frame: frame)
         
         self.rate_label.text = "124"
-        self.rate_label.backgroundColor = UIColor.gray
+        self.rate_label.backgroundColor = UIColor.clear
         self.rate_label.textAlignment = .center
         
+        self.rate_label.layer.borderWidth = 0.5
+        self.rate_label.layer.borderColor = UIColor.white.cgColor
+        
         self.amount_label.text = "654"
-        self.amount_label.backgroundColor = UIColor.red
+        self.amount_label.backgroundColor = UIColor.clear
         self.amount_label.textAlignment = .center
+        
+        self.amount_label.layer.borderWidth = 0.5
+        self.amount_label.layer.borderColor = UIColor.white.cgColor
         
         self.addSubview(self.rate_label)
         self.addSubview(self.amount_label)
@@ -50,6 +56,7 @@ class ITCalculateItem : UIView {
     
     func autolayout_text1() {
         self.rate_label.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.snp.top)
             maker.left.equalTo(self.snp.left)
             maker.right.equalTo(self.snp.right)
             maker.width.lessThanOrEqualTo(self.snp.width)
@@ -59,6 +66,7 @@ class ITCalculateItem : UIView {
     
     func autolayout_func() {
         self.rate_label.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.snp.top)
             maker.left.equalTo(self.snp.left)
             maker.right.equalTo(self.amount_label.snp.left)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
@@ -66,6 +74,7 @@ class ITCalculateItem : UIView {
         }
         
         self.amount_label.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.snp.top)
             maker.left.equalTo(self.rate_label.snp.right)
             maker.right.equalTo(self.snp.right)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.6)

@@ -29,12 +29,18 @@ class IncomeTaxCalculateView: UIView {
 //        let item = ITCalculateItem.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 100))
         
         self.addSubview(personal_item)
-        personal_item.autolayout_func()
+        
         
         
         self.addSubview(company_item)
-        company_item.autolayout_func()
         
+        
+    }
+    
+    func setcontent1(_ title : String ,_ text : String , _ text2 : String) {
+        self.title.text = title
+        personal_item.set_text1(text)
+        company_item.set_text1(text2)
     }
     
     func setcontent(_ title : String , _ person_rate : Float , _ company_rate : Float , _ total_income : Float) {
@@ -44,8 +50,25 @@ class IncomeTaxCalculateView: UIView {
     }
     
     
+    func autolayout_func1() {
+        personal_item.autolayout_text1()
+        company_item.autolayout_text1()
+        item_autolayout()
+    }
+    
     func autolayout_func() {
+        personal_item.autolayout_func()
+        company_item.autolayout_func()
+        item_autolayout()
+        
+        
+    }
+    
+    
+    func item_autolayout() {
         self.title.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.snp.top)
+            maker.bottom.equalTo(self.snp.bottom)
             maker.left.equalTo(self.snp.left)
             maker.right.equalTo(self.snp.right)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.2)
@@ -53,6 +76,8 @@ class IncomeTaxCalculateView: UIView {
         }
         
         self.personal_item.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.snp.top)
+            maker.bottom.equalTo(self.snp.bottom)
             maker.left.equalTo(self.title.snp.right)
             maker.right.equalTo(self.company_item.snp.left)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
@@ -60,15 +85,14 @@ class IncomeTaxCalculateView: UIView {
         }
         
         self.company_item.snp.makeConstraints { (maker) in
+            maker.bottom.equalTo(self.snp.bottom)
+            maker.top.equalTo(self.snp.top)
             maker.left.equalTo(self.personal_item.snp.right)
             maker.right.equalTo(self.snp.right)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
             maker.height.equalTo(self.snp.height)
         }
-        
     }
-    
-    
     
     
     required init?(coder aDecoder: NSCoder) {
