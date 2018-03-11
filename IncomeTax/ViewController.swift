@@ -14,10 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.gray
-        let view = ITCalculateExcel.init(frame: CGRect.init(x: 0, y: 0, width: 400, height: 500))
-        
+        let view = IncomeTaxView.init(frame: CGRect.init(x: 0, y: 0, width: 400, height: 600))
+        view.backgroundColor = UIColor.red
         self.view.addSubview(view)
         view.autolayout_func()
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
