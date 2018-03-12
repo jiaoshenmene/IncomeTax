@@ -23,10 +23,11 @@ class IncomeTaxCalculateView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        
+        self.title.layer.borderWidth = 1
+        self.title.layer.borderColor = UIColor.white.cgColor
+        self.title.textAlignment = .center
         self.addSubview(self.title)
         
-//        let item = ITCalculateItem.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 100))
         
         self.addSubview(personal_item)
         

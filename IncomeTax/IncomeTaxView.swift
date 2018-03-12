@@ -30,7 +30,7 @@ class IncomeTaxView: UIView {
         self.title_label.text = "个税计算器2018"
         self.title_label.textAlignment = .center
         self.addSubview(self.title_label)
-        
+
         
         self.setting_button.setTitle("设置", for: .normal)
         self.setting_button.addTarget(self, action: #selector(setting_func), for: .touchUpInside)
@@ -48,7 +48,7 @@ class IncomeTaxView: UIView {
         self.addSubview(self.location_city)
         self.addSubview(self.location_city_textField)
         
-        self.autolayout_func()
+//        self.autolayout_func()
         
         self.calculateExcel.backgroundColor = UIColor.red
         self.addSubview(self.calculateExcel)
@@ -84,21 +84,21 @@ class IncomeTaxView: UIView {
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
-        
+
         self.gross_salary_textField.snp.makeConstraints { (maker) in
             maker.left.equalTo(self.gross_salary_label.snp.right).offset(3)
             maker.top.equalTo(self.gross_salary_label.snp.top)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
-        
+
         self.location_city.snp.makeConstraints { (maker) in
             maker.left.equalTo(self.snp.left).offset(10)
             maker.top.equalTo(self.gross_salary_label.snp.top).offset(60)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
-        
+
         self.location_city_textField.snp.makeConstraints { (maker) in
             maker.left.equalTo(self.location_city.snp.right).offset(3)
             maker.top.equalTo(self.location_city.snp.top)
@@ -106,10 +106,12 @@ class IncomeTaxView: UIView {
             maker.height.equalTo(30)
         }
         self.calculateExcel.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.snp.right).offset(3)
-            maker.top.equalTo(self.location_city.snp.top)
-            maker.width.equalTo(100)
-            maker.height.equalTo(30)
+            maker.left.equalTo(self.snp.left).offset(3)
+            maker.right.equalTo(self.snp.right).offset(-3)
+            maker.top.equalTo(self.location_city_textField.snp.bottom).offset(10)
+            maker.bottom.equalTo(self.snp.bottom).offset(10)
+            maker.width.lessThanOrEqualTo(self.snp.width)
+            maker.height.lessThanOrEqualTo(self.snp.height)
         }
     }
     

@@ -29,22 +29,29 @@ class ITCalculateExcel: UIView {
        
         self.yanglao_item.setcontent("养老", 8, 19, 10000)
         self.yanglao_item.backgroundColor = UIColor.clear
+        self.yanglao_item.layer.borderWidth = 0.5
+        self.yanglao_item.layer.borderColor = UIColor.white.cgColor
         self.addSubview(self.yanglao_item)
         self.yanglao_item.autolayout_func()
         
         self.yiliao_item.setcontent("医疗", 5, 10, 10000)
         self.yiliao_item.backgroundColor = UIColor.clear
+        self.yiliao_item.layer.borderWidth = 0.5
+        self.yiliao_item.layer.borderColor = UIColor.white.cgColor
         self.addSubview(self.yiliao_item)
         self.yiliao_item.autolayout_func()
         
         
         shiye_item.setcontent("失业", 0.2, 0.8, 10000)
         shiye_item.backgroundColor = UIColor.clear
+        self.yiliao_item.layer.borderWidth = 0.5
+        self.yiliao_item.layer.borderColor = UIColor.white.cgColor
         self.addSubview(shiye_item)
         shiye_item.autolayout_func()
         
         gongjijin_item.setcontent("公积金", 12, 12, 10000)
-    
+        self.yiliao_item.layer.borderWidth = 0.5
+        self.yiliao_item.layer.borderColor = UIColor.white.cgColor
         self.addSubview(gongjijin_item)
         gongjijin_item.autolayout_func()
         
