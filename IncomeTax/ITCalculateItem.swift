@@ -67,16 +67,16 @@ class ITCalculateItem : UIView {
     func autolayout_func() {
         self.rate_label.snp.makeConstraints { (maker) in
             maker.top.equalTo(self.snp.top)
-            maker.left.equalTo(self.snp.left)
-            maker.right.equalTo(self.amount_label.snp.left)
+            maker.leading.equalTo(self.snp.leading)
+            maker.trailing.equalTo(self.amount_label.snp.leading)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
             maker.height.equalTo(self.snp.height)
         }
         
         self.amount_label.snp.makeConstraints { (maker) in
             maker.top.equalTo(self.snp.top)
-            maker.left.equalTo(self.rate_label.snp.right)
-            maker.right.equalTo(self.snp.right)
+            maker.leading.equalTo(self.rate_label.snp.trailing)
+            maker.trailing.equalTo(self.snp.trailing)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.6)
             maker.height.equalTo(self.snp.height)
         }

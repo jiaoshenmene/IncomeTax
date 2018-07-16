@@ -10,7 +10,7 @@ pod 'Alamofire'
 
 pod 'SwiftyJSON'
 
-pod 'ReactiveCocoa' , '7.0.0-rc.1'
+pod 'ReactiveSwift', '~> 3.0'
 
 pod 'CocoaLumberjack'
 pod 'Fabric'

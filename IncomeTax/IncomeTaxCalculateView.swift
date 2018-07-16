@@ -70,8 +70,8 @@ class IncomeTaxCalculateView: UIView {
         self.title.snp.makeConstraints { (maker) in
             maker.top.equalTo(self.snp.top)
             maker.bottom.equalTo(self.snp.bottom)
-            maker.left.equalTo(self.snp.left)
-            maker.right.equalTo(self.snp.right)
+            maker.leading.equalTo(self.snp.leading)
+            maker.trailing.equalTo(self.personal_item.snp.leading)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.2)
             maker.height.equalTo(self.snp.height)
         }
@@ -79,8 +79,8 @@ class IncomeTaxCalculateView: UIView {
         self.personal_item.snp.makeConstraints { (maker) in
             maker.top.equalTo(self.snp.top)
             maker.bottom.equalTo(self.snp.bottom)
-            maker.left.equalTo(self.title.snp.right)
-            maker.right.equalTo(self.company_item.snp.left)
+            maker.leading.equalTo(self.title.snp.trailing)
+            maker.trailing.equalTo(self.company_item.snp.leading)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
             maker.height.equalTo(self.snp.height)
         }
@@ -88,8 +88,8 @@ class IncomeTaxCalculateView: UIView {
         self.company_item.snp.makeConstraints { (maker) in
             maker.bottom.equalTo(self.snp.bottom)
             maker.top.equalTo(self.snp.top)
-            maker.left.equalTo(self.personal_item.snp.right)
-            maker.right.equalTo(self.snp.right)
+            maker.leading.equalTo(self.personal_item.snp.trailing)
+            maker.trailing.equalTo(self.snp.trailing)
             maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
             maker.height.equalTo(self.snp.height)
         }

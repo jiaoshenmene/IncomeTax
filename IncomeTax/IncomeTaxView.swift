@@ -50,9 +50,9 @@ class IncomeTaxView: UIView {
         
 //        self.autolayout_func()
         
-        self.calculateExcel.backgroundColor = UIColor.red
+        self.calculateExcel.backgroundColor = UIColor.gray
         self.addSubview(self.calculateExcel)
-        self.calculateExcel.autolayout_func()
+        
         
     }
     
@@ -64,8 +64,13 @@ class IncomeTaxView: UIView {
     
     func autolayout_func() {
         
+        self.snp.makeConstraints { (maker) in
+            maker.center.equalTo((superview?.snp.center)!)
+            maker.size.equalTo((superview?.frame.size)!)
+        }
+        
         self.setting_button.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.snp.left).offset(10)
+            maker.leading.equalTo(self.snp.leading).offset(10)
             maker.top.equalTo(self.snp.top).offset(10)
             maker.width.equalTo(50)
             maker.height.equalTo(30)
@@ -79,40 +84,41 @@ class IncomeTaxView: UIView {
         }
         
         self.gross_salary_label.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.snp.left).offset(10)
+            maker.leading.equalTo(self.snp.leading).offset(10)
             maker.top.equalTo(self.setting_button.snp.top).offset(100)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
 
         self.gross_salary_textField.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.gross_salary_label.snp.right).offset(3)
+            maker.leading.equalTo(self.gross_salary_label.snp.trailing).offset(3)
             maker.top.equalTo(self.gross_salary_label.snp.top)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
 
         self.location_city.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.snp.left).offset(10)
+            maker.leading.equalTo(self.snp.leading).offset(10)
             maker.top.equalTo(self.gross_salary_label.snp.top).offset(60)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
 
         self.location_city_textField.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.location_city.snp.right).offset(3)
+            maker.leading.equalTo(self.location_city.snp.trailing).offset(3)
             maker.top.equalTo(self.location_city.snp.top)
             maker.width.equalTo(100)
             maker.height.equalTo(30)
         }
         self.calculateExcel.snp.makeConstraints { (maker) in
-            maker.left.equalTo(self.snp.left).offset(3)
-            maker.right.equalTo(self.snp.right).offset(-3)
+            maker.leading.equalTo(self.snp.leading).offset(3)
+            maker.trailing.equalTo(self.snp.trailing).offset(-3)
             maker.top.equalTo(self.location_city_textField.snp.bottom).offset(10)
-            maker.bottom.equalTo(self.snp.bottom).offset(10)
+            maker.bottom.equalTo(self.snp.bottom).offset(-10)
             maker.width.lessThanOrEqualTo(self.snp.width)
             maker.height.lessThanOrEqualTo(self.snp.height)
         }
+        self.calculateExcel.autolayout_func()
     }
     
     required init?(coder aDecoder: NSCoder) {
