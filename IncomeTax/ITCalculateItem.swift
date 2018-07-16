@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ITCalculateItem : UIView {
+class ITCalculateItem : UIView , ITCalculateItemConstraints {
     
     let rate_label : UILabel = UILabel()
     let amount_label : UILabel = UILabel()
@@ -54,33 +54,8 @@ class ITCalculateItem : UIView {
         
     }
     
-    func autolayout_text1() {
-        self.rate_label.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.left.equalTo(self.snp.left)
-            maker.right.equalTo(self.snp.right)
-            maker.width.lessThanOrEqualTo(self.snp.width)
-            maker.height.equalTo(self.snp.height)
-        }
-    }
     
-    func autolayout_func() {
-        self.rate_label.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.leading.equalTo(self.snp.leading)
-            maker.trailing.equalTo(self.amount_label.snp.leading)
-            maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
-            maker.height.equalTo(self.snp.height)
-        }
-        
-        self.amount_label.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.leading.equalTo(self.rate_label.snp.trailing)
-            maker.trailing.equalTo(self.snp.trailing)
-            maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.6)
-            maker.height.equalTo(self.snp.height)
-        }
-    }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

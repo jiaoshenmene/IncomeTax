@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ITCalculateExcel: UIView {
+class ITCalculateExcel: UIView , ITCalculateExcelConstraints {
     
     let space_x = 5
     
@@ -72,80 +72,6 @@ class ITCalculateExcel: UIView {
         
     }
     
-    func autolayout_func() {
-        yanglao_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.bottom.equalTo(self.yiliao_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(self.yiliao_item.snp.height)
-        }
-
-
-        yiliao_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.yanglao_item.snp.bottom)
-            maker.bottom.equalTo(self.shiye_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(shiye_item.snp.height)
-        }
-
-        shiye_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.yiliao_item.snp.bottom)
-            maker.bottom.equalTo(self.gongjijin_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(gongjijin_item.snp.height)
-        }
-//
-//
-        gongjijin_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.shiye_item.snp.bottom)
-            maker.bottom.equalTo(self.geshui_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(geshui_item.snp.height)
-        }
-//
-        geshui_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.gongjijin_item.snp.bottom)
-            maker.bottom.equalTo(self.xiaoji_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(xiaoji_item.snp.height)
-        }
-//
-        xiaoji_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.geshui_item.snp.bottom)
-            maker.bottom.equalTo(self.shuihougz_item.snp.top)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(shuihougz_item.snp.height)
-        }
-
-
-        shuihougz_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.xiaoji_item.snp.bottom)
-            maker.bottom.equalTo(self.snp.bottom)
-            maker.leading.equalTo(self.snp.leading).offset(space_x)
-            maker.trailing.equalTo(self.snp.trailing).offset(-space_x)
-            maker.width.lessThanOrEqualToSuperview()
-            maker.height.equalTo(geshui_item.snp.height)
-        }
-        self.yanglao_item.autolayout_func()
-        self.yiliao_item.autolayout_func()
-        shiye_item.autolayout_func()
-        gongjijin_item.autolayout_func()
-        xiaoji_item.autolayout_func1()
-        geshui_item.autolayout_func1()
-        shuihougz_item.autolayout_func1()
-    }
     
     
     

@@ -21,9 +21,6 @@ class IncomeTaxView: UIView {
     let location_city_textField : UITextField = UITextField()
     let calculateExcel : ITCalculateExcel = ITCalculateExcel()
     
-    
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame )
         
@@ -47,9 +44,6 @@ class IncomeTaxView: UIView {
         self.location_city.text = "所在城市"
         self.addSubview(self.location_city)
         self.addSubview(self.location_city_textField)
-        
-//        self.autolayout_func()
-        
         self.calculateExcel.backgroundColor = UIColor.gray
         self.addSubview(self.calculateExcel)
         

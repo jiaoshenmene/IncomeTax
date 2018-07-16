@@ -9,7 +9,7 @@
 import UIKit
 
 
-class IncomeTaxCalculateView: UIView {
+class IncomeTaxCalculateView: UIView , IncomeTaxCalculateViewConstraints{
     
     
     let title : UILabel = UILabel()
@@ -51,49 +51,7 @@ class IncomeTaxCalculateView: UIView {
     }
     
     
-    func autolayout_func1() {
-        personal_item.autolayout_text1()
-        company_item.autolayout_text1()
-        item_autolayout()
-    }
     
-    func autolayout_func() {
-        personal_item.autolayout_func()
-        company_item.autolayout_func()
-        item_autolayout()
-        
-        
-    }
-    
-    
-    func item_autolayout() {
-        self.title.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.bottom.equalTo(self.snp.bottom)
-            maker.leading.equalTo(self.snp.leading)
-            maker.trailing.equalTo(self.personal_item.snp.leading)
-            maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.2)
-            maker.height.equalTo(self.snp.height)
-        }
-        
-        self.personal_item.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.snp.top)
-            maker.bottom.equalTo(self.snp.bottom)
-            maker.leading.equalTo(self.title.snp.trailing)
-            maker.trailing.equalTo(self.company_item.snp.leading)
-            maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
-            maker.height.equalTo(self.snp.height)
-        }
-        
-        self.company_item.snp.makeConstraints { (maker) in
-            maker.bottom.equalTo(self.snp.bottom)
-            maker.top.equalTo(self.snp.top)
-            maker.leading.equalTo(self.personal_item.snp.trailing)
-            maker.trailing.equalTo(self.snp.trailing)
-            maker.width.lessThanOrEqualTo(self.snp.width).multipliedBy(0.4)
-            maker.height.equalTo(self.snp.height)
-        }
-    }
     
     
     required init?(coder aDecoder: NSCoder) {
